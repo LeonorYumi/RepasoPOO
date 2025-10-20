@@ -14,7 +14,6 @@ public class Cancion {
         duracion = 0;
         reproducciones = 0;
     }
-
     // getters y setters
     public String getTitulo() {
         return titulo;
@@ -46,7 +45,6 @@ public class Cancion {
             this.reproducciones = reproducciones;
         }
     }
-
     public void Reproducir(){
         if (reproducciones != 0){
             this.reproducciones += 1;

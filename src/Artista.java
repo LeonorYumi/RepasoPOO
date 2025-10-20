@@ -9,14 +9,12 @@ public class Artista {
         this.genero = genero;
         this.seguidores = seguidores;
     }
-
     // Constructor sin parametros
     public Artista() {
         nombre = "Bad Bunny";
         genero = "Reggaeton";
         seguidores = 49000000;
     }
-
     // getters y setters
     public String getNombre() {
         return nombre;
@@ -60,6 +58,4 @@ public class Artista {
         System.out.println("Genero: " + this.genero);
         System.out.println("Seguidores: " + this.seguidores);
     }
-
-
 }

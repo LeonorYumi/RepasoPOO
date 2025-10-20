@@ -8,7 +8,6 @@ public class Main {
         Artista artista1 = new Artista("Karol G", "Reggeateon", 71000000);
         Artista artista2 = new Artista();
         Cancion cancion1 = new Cancion();
-
         // MENU
         do {
             System.out.println("\n========== MENÚ ===========");
@@ -21,7 +20,6 @@ public class Main {
             System.out.print("Elige una opción: ");
             opcion = sc.nextInt();
             sc.nextLine(); // limpiar buffer
-
             switch(opcion) {
                 case 1:
                     System.out.print("Nombre artista 2: ");
@@ -32,7 +30,6 @@ public class Main {
                     artista2.setSeguidores(sc.nextInt());
                     sc.nextLine();
                     break;
-
                 case 2:
                     System.out.print("Título canción 1: ");
                     cancion1.setTitulo(sc.nextLine());
@@ -40,18 +37,15 @@ public class Main {
                     cancion1.setDuracion(sc.nextDouble());
                     sc.nextLine();
                     break;
-
                 case 3:
                     System.out.print("Cantidad de seguidores a aumentar: ");
                     artista2.ganarSeguidores(sc.nextInt());
                     sc.nextLine();
                     break;
-
                 case 4:
                     cancion1.Reproducir();
                     System.out.println("Canción reproducida. Total reproducciones: " + cancion1.getReproducciones());
                     break;
-
                 case 5:
                     System.out.println("\n=== Artista 1 ====");
                     System.out.println("Nombre: " + artista1.getNombre());
@@ -62,21 +56,17 @@ public class Main {
                     System.out.println("Nombre: " + artista2.getNombre());
                     System.out.println("Género: " + artista2.getGenero());
                     System.out.println("Seguidores: " + artista2.getSeguidores());
-
                     System.out.println("\n=== Canción 1 ===");
                     System.out.println("Título: " + cancion1.getTitulo());
                     System.out.println("Duración: " + cancion1.getDuracion());
                     System.out.println("Reproducciones: " + cancion1.getReproducciones());
                     break;
-
                 case 6:
                     System.out.println("Saliendo...");
                     break;
-
                 default:
                     System.out.println("Opción inválida.");
             }
-
         } while(opcion != 6);
         sc.close();
     }
